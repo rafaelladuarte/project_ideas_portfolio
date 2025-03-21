@@ -17,7 +17,7 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Ferramentas**: AWS (S3, Glue, Redshift), Azure Data Lake, Google BigQuery.
    - **Objetivo**: Demonstrar processos de ingestão de grandes volumes de dados, ETL e consultas rápidas para análise.
 
-### 2. **Pipeline de ETL com Apache Airflow e Spark**
+### 2. **Pipeline de ETL com Apache Airflow**
    - **Descrição**: Desenvolver um pipeline de dados automatizado utilizando Apache Airflow para orquestração de tarefas e Apache Spark para processamento distribuído.
    - **Ferramentas**: Apache Airflow, Apache Spark, HDFS, Hadoop.
    - **Objetivo**: Gerenciar dependências e escalar o processamento de dados em clusters distribuídos.
@@ -42,11 +42,6 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Ferramentas**: AWS Glue, Apache Atlas, AWS S3, Databricks.
    - **Objetivo**: Assegurar qualidade e governança de dados em um ambiente escalável.
 
-### 7. **Pipeline de Machine Learning com Big Data**
-   - **Descrição**: Criar um pipeline de Big Data para treinamento e implantação de modelos de machine learning.
-   - **Ferramentas**: Apache Spark, MLlib, TensorFlow, Databricks.
-   - **Objetivo**: Integrar Big Data e machine learning desde a ingestão até a implantação de modelos.
-
 ### 8. **Monitoramento de Pipelines de Dados em Big Data**
    - **Descrição**: Desenvolver um sistema de monitoramento e alerta para pipelines de Big Data.
    - **Ferramentas**: Apache Airflow, Prometheus, Grafana.
@@ -56,6 +51,20 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Descrição**: Criar um sistema integrado com WhatsApp, permitindo o envio de denúncias diretamente para autoridades policiais.
    - **Ferramentas**: Twilio API, Python, Elasticsearch, MongoDB, Kibana/Grafana.
    - **Objetivo**: Facilitar o envio de denúncias em tempo real, centralizando o armazenamento e visualização para otimizar investigações.
+   - **Referência**: [Hackathon: Tecnologias Disruptivas para Segurança Pública](https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/hackathon-tecnologias-disruptivas-para-seguranca-publica)
+
+### 10. **OpenSky CDC DataLake**
+   - **Descrição**: Captura e replicação de dados de tráfego aéreo em tempo real, utilizando Change Data Capture (CDC) para armazenar e analisar dados de voos da OpenSky Network.
+   - **Ferramentas**: PostgreSQL, Debezium, Apache Kafka, Python, mIMO (Data Lake), Docker, Trino/Iceberg.
+   - **Objetivo**: Demonstrar o uso de CDC para ingestão de dados contínuos, garantindo armazenamento eficiente e permitindo análises avançadas.
+   - **Referência**: [FIA Festival CDC Data Lake](https://github.com/Labdata-FIA/fia-vestival-cdc-lake)
+
+1. Construção de uma Arquitetura de Dados em Nuvem para Análise em Tempo Próximo ao Real
+Descrição: Desenvolver uma solução de arquitetura de dados para monitorar ônibus da SPTrans em São Paulo, utilizando dados da API "Olho Vivo" e GTFS. O projeto incluiu a ingestão, processamento e visualização de dados em tempo próximo ao real, com foco em métricas como geolocalização, previsão de chegada e percentual de circulação.
+
+Ferramentas: Airflow (orquestração), Spark (processamento), MinIO (armazenamento), Metabase (visualização), Presto (consultas SQL), Docker (conteinerização).
+
+Objetivo: Demonstrar a construção de um pipeline de dados escalável, desde a coleta de dados brutos até a criação de dashboards interativos, com foco em análise de dados de transporte público.
 
 ## 📄 Licença
 
