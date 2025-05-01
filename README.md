@@ -10,6 +10,15 @@ O objetivo deste repositório é organizar e documentar ideias de projetos que p
 
 Cada ideia está documentada com uma breve descrição, as ferramentas e tecnologias recomendadas, além do objetivo específico de aprendizado e demonstração de habilidades.
 
+## ⚙️ Projetos em Desenvolvimento
+
+### 1. **Pipeline de ETL com Apache Airflow**
+   - **Status**: Em desenvolvimento
+   - **Repositório**: [GitHub - real_state_data_pipeline](https://github.com/rafaelladuarte/real_state_data_pipeline)
+   - **Descrição**: Este projeto terá como objetivo desenvolver um pipeline de dados automatizado com Apache Airflow, que coletará, transformará, armazenará e visualizará dados do mercado imobiliário. A extração será feita por meio de web scraping com Selenium, seguida de limpeza e cálculo de métricas como preço médio por bairro. Os dados tratados serão armazenados em bancos como PostgreSQL ou MongoDB e visualizados em dashboards interativos para facilitar a análise de tendências.
+   - **Ferramentas**: Docker, Apache Airflow, Python (Selenium), PostgreSQL, MongoDB
+   - **Objetivo**: Automatizar e escalar o processamento de dados por meio do Apache Airflow, garantindo controle de dependências, agendamento de tarefas e modularidade no pipeline de ETL.
+
 ## 💡 Ideias de Projetos
 
 ### 1. **Construção de um Data Lake e Data Warehouse em Nuvem**
@@ -17,10 +26,11 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Ferramentas**: AWS (S3, Glue, Redshift), Azure Data Lake, Google BigQuery.
    - **Objetivo**: Demonstrar processos de ingestão de grandes volumes de dados, ETL e consultas rápidas para análise.
 
-### 2. **Pipeline de ETL com Apache Airflow**
-   - **Descrição**: Desenvolver um pipeline de dados automatizado utilizando Apache Airflow para orquestração de tarefas e Apache Spark para processamento distribuído.
-   - **Ferramentas**: Apache Airflow, Apache Spark, HDFS, Hadoop.
-   - **Objetivo**: Gerenciar dependências e escalar o processamento de dados em clusters distribuídos.
+### 2. **AvesRAG – Sistema de Classificação Baseado em Grafo e LLM**
+   - **Descrição**: Criação de um sistema inteligente para classificação de aves com base em um grafo de conhecimento estruturado, relacionando informações de taxonomia, morfologia, alimentação, habitat e distribuição. O grafo será usado em conjunto com um modelo de linguagem (LLM), que interpretará descrições fornecidas por usuários e sugerirá as espécies mais prováveis, utilizando RAG (Retrieval-Augmented Generation).
+   - **Ferramentas**: Neo4j, Python, OpenAI GPT com LangChain ou LlamaIndex, FastAPI ou Streamlit
+   - **Objetivos**: Construir um grafo de conhecimento com dados ricos sobre aves, Relacionar características observáveis com espécies reais, Permitir que um usuário descreva uma ave e receba sugestões prováveis de espécies, Usar RAG com LLM para classificação contextual baseada no grafo
+   - **Base de dados**: GBIF(Taxonomia e distribuição geográfica), eBird OU Birds of the World (Nome comum, nome científico, habitat, alimentação). TraitBank (Morfologia (bico, cauda, asas, etc.) e hábitos), Avibase (Subespécies e classificações)
 
 ### 3. **Ingestão de Dados em Tempo Real com Kafka e Spark Streaming**
    - **Descrição**: Configurar um sistema de processamento em tempo real com Apache Kafka para ingestão de eventos de alta frequência e Spark Streaming.
@@ -42,6 +52,12 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Ferramentas**: AWS Glue, Apache Atlas, AWS S3, Databricks.
    - **Objetivo**: Assegurar qualidade e governança de dados em um ambiente escalável.
 
+### 7.  **Construção de uma Arquitetura de Dados em Nuvem para Análise em Tempo Próximo ao Real**
+   - **Descrição**: Desenvolver uma solução de arquitetura de dados para monitorar ônibus da SPTrans em São Paulo, utilizando dados da API "Olho Vivo" e GTFS. O projeto incluiu a ingestão, processamento e visualização de dados em tempo próximo ao real, com foco em métricas como geolocalização, previsão de chegada e percentual de circulação.
+   - **Ferramentas**: Airflow (orquestração), Spark (processamento), MinIO (armazenamento), Metabase (visualização), Presto (consultas SQL), Docker (conteinerização).
+   - **Objetivo**: Demonstrar a construção de um pipeline de dados escalável, desde a coleta de dados brutos até a criação de dashboards interativos, com foco em análise de dados de transporte público.
+   - **Referência**: [Festival de Verão 2025 LabData FIA - Case SPTrans](https://www.youtube.com/watch?v=cLL5gppwwqA&list=PLkaqDF7JQGzLGWL6_0ZqYlEIgAqQJag5Q&index=16)
+
 ### 8. **Monitoramento de Pipelines de Dados em Big Data**
    - **Descrição**: Desenvolver um sistema de monitoramento e alerta para pipelines de Big Data.
    - **Ferramentas**: Apache Airflow, Prometheus, Grafana.
@@ -51,20 +67,16 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Descrição**: Criar um sistema integrado com WhatsApp, permitindo o envio de denúncias diretamente para autoridades policiais.
    - **Ferramentas**: Twilio API, Python, Elasticsearch, MongoDB, Kibana/Grafana.
    - **Objetivo**: Facilitar o envio de denúncias em tempo real, centralizando o armazenamento e visualização para otimizar investigações.
-   - **Referência**: [Hackathon: Tecnologias Disruptivas para Segurança Pública](https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/hackathon-tecnologias-disruptivas-para-seguranca-publica)
+   - **Referência**: [Hackathon: Tecnologias Disruptivas para Segurança Pública](https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/hackathon-tecnologias-disruptivas-para-seguranca-publica)7
+      - [Apresentações das Equipes Vencedoras](https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/confira-as-apresentacoes-das-equipes)
 
 ### 10. **OpenSky CDC DataLake**
+   - **Repositório**: [OpenSky CDC DataLake](https://github.com/rafaelladuarte/opensky-cdc-datalake)
    - **Descrição**: Captura e replicação de dados de tráfego aéreo em tempo real, utilizando Change Data Capture (CDC) para armazenar e analisar dados de voos da OpenSky Network.
    - **Ferramentas**: PostgreSQL, Debezium, Apache Kafka, Python, mIMO (Data Lake), Docker, Trino/Iceberg.
    - **Objetivo**: Demonstrar o uso de CDC para ingestão de dados contínuos, garantindo armazenamento eficiente e permitindo análises avançadas.
    - **Referência**: [FIA Festival CDC Data Lake](https://github.com/Labdata-FIA/fia-vestival-cdc-lake)
 
-1. Construção de uma Arquitetura de Dados em Nuvem para Análise em Tempo Próximo ao Real
-Descrição: Desenvolver uma solução de arquitetura de dados para monitorar ônibus da SPTrans em São Paulo, utilizando dados da API "Olho Vivo" e GTFS. O projeto incluiu a ingestão, processamento e visualização de dados em tempo próximo ao real, com foco em métricas como geolocalização, previsão de chegada e percentual de circulação.
-
-Ferramentas: Airflow (orquestração), Spark (processamento), MinIO (armazenamento), Metabase (visualização), Presto (consultas SQL), Docker (conteinerização).
-
-Objetivo: Demonstrar a construção de um pipeline de dados escalável, desde a coleta de dados brutos até a criação de dashboards interativos, com foco em análise de dados de transporte público.
 
 ## 📄 Licença
 
