@@ -31,6 +31,7 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Ferramentas**: Neo4j, Python, OpenAI GPT com LangChain ou LlamaIndex, FastAPI ou Streamlit
    - **Objetivos**: Construir um grafo de conhecimento com dados ricos sobre aves, Relacionar características observáveis com espécies reais, Permitir que um usuário descreva uma ave e receba sugestões prováveis de espécies, Usar RAG com LLM para classificação contextual baseada no grafo
    - **Base de dados**: GBIF(Taxonomia e distribuição geográfica), eBird OU Birds of the World (Nome comum, nome científico, habitat, alimentação). TraitBank (Morfologia (bico, cauda, asas, etc.) e hábitos), Avibase (Subespécies e classificações)
+   - **Referências**: [Workshop: Arquitetura e Aplicação do NeuroMED – Copiloto Clínico com IA Generativa para Saúde Mental](https://www.youtube.com/watch?v=f5z2HPL47A4) , [Notebook](https://colab.research.google.com/drive/1HcSGQ7-is11czhfje5O-tMAaWtzUPZfh)
 
 ### 3. **Ingestão de Dados em Tempo Real com Kafka e Spark Streaming**
    - **Descrição**: Configurar um sistema de processamento em tempo real com Apache Kafka para ingestão de eventos de alta frequência e Spark Streaming.
@@ -42,10 +43,13 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Ferramentas**: Apache Hadoop, Apache Kafka, Spark, HDFS, AWS Lambda.
    - **Objetivo**: Implementar uma arquitetura robusta para dados históricos e eventos em tempo real.
 
-### 5. **Processamento de Grandes Volumes de Dados com Apache Hadoop**
-   - **Descrição**: Construir um pipeline de processamento de dados distribuídos em clusters HDFS.
-   - **Ferramentas**: Apache Hadoop, HDFS, MapReduce, Hive.
-   - **Objetivo**: Demonstrar habilidades de processamento distribuído para grandes volumes de dados.
+### 5. **DataCovidAnalytics BR – Pipeline de Big Data Distribuído com Hadoop**
+   - **Repositório**: [Projeto Final Big Data Engineer Semantix Academic](https://github.com/rafaelladuarte/covid_big_data_enginner_semantix_final_project)
+   - **Descrição**:  Desenvolvimento de um pipeline distribuído para processamento e análise de dados de COVID-19 no Brasil. O sistema realiza o envio de dados para o HDFS, organiza-os em uma tabela Hive particionada por município e gera visualizações analíticas utilizando Apache Spark. As visualizações incluem casos recuperados, confirmados e óbitos, e são armazenadas em diferentes formatos e tecnologias para fins de monitoramento e análise em tempo real. Uma visualização de síntese por estado também será gerada e integrada a um dashboard no Elastic..
+   - **Ferramentas**: HDFS, Apache Hive, Apache Spark, Apache Kafka, Elasticsearch, Kibana, Parquet com compressão Snappy.
+   - **Objetivo**: Aplicar habilidades técnicas em big data, engenharia de dados e visualização distribuída com Spark, Hive, Kafka e Elastic.
+   - **Base de dados**: Base de dados: Dados públicos de COVID-19 com granularidade municipal (fontes como Ministério da Saúde, Secretarias Estaduais de Saúde ou bases similares com atualizações regulares)
+   - **Referências**: [Curso Semantix](https://github.com/rafaelladuarte/big_data_engineer_sematix), [Exemplo de Projeto Final](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#enviar-os-dados-para-o-hdfs)
 
 ### 6. **Data Governance e Qualidade de Dados em um Data Lake**
    - **Descrição**: Projetar uma arquitetura de Data Lake com práticas de governança, controle de qualidade, catalogação e versionamento.
