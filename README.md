@@ -19,6 +19,13 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Ferramentas**: Docker, Apache Airflow, Python (Selenium), PostgreSQL, MongoDB
    - **Objetivo**: Automatizar e escalar o processamento de dados por meio do Apache Airflow, garantindo controle de dependências, agendamento de tarefas e modularidade no pipeline de ETL.
 
+### 2. **Minha Biblioteca - Dashboard Streamlit/Dash Plotly**
+   - **Status**: Em desenvolvimento
+   - **Repositório**: [Minha Biblioteca](https://github.com/rafaelladuarte/minha_biblioteca_dashboard)
+   - **Descrição**: Dashboard interativo para visualização e análise da estante pessoal de livros, com filtros por status de leitura, gênero, autor, editora, origem e outros atributos.
+   - **Ferramentas**: Python, Streamlit ou Dash Plotly, Pandas.
+   - **Objetivo**: Visualizar a evolução das leituras, acompanhar metas, identificar padrões de leitura e conhecer melhor o acervo pessoal de livros.
+
 ## 💡 Ideias de Projetos com estrutura já definida
 
 ### 1. **AvesRAG – Sistema de Classificação Baseado em Grafo e LLM**
@@ -28,12 +35,12 @@ Cada ideia está documentada com uma breve descrição, as ferramentas e tecnolo
    - **Base de dados**: GBIF(Taxonomia e distribuição geográfica), eBird OU Birds of the World (Nome comum, nome científico, habitat, alimentação). TraitBank (Morfologia (bico, cauda, asas, etc.) e hábitos), Avibase (Subespécies e classificações)
    - **Referências**: [Workshop: Arquitetura e Aplicação do NeuroMED – Copiloto Clínico com IA Generativa para Saúde Mental](https://www.youtube.com/watch?v=f5z2HPL47A4) , [Notebook](https://colab.research.google.com/drive/1HcSGQ7-is11czhfje5O-tMAaWtzUPZfh)
 
-### 2. **DataCovidAnalytics BR – Pipeline de Big Data Distribuído com Hadoop**
-   - **Repositório**: [Projeto Final Big Data Engineer Semantix Academic](https://github.com/rafaelladuarte/covid_big_data_enginner_semantix_final_project)
-   - **Descrição**:  Desenvolvimento de um pipeline distribuído para processamento e análise de dados de COVID-19 no Brasil. O sistema realiza o envio de dados para o HDFS, organiza-os em uma tabela Hive particionada por município e gera visualizações analíticas utilizando Apache Spark. As visualizações incluem casos recuperados, confirmados e óbitos, e são armazenadas em diferentes formatos e tecnologias para fins de monitoramento e análise em tempo real. Uma visualização de síntese por estado também será gerada e integrada a um dashboard no Elastic..
+### 2. **DataHealthAnalytics BR – Pipeline de Big Data Distribuído com Hadoop**
+   - **Repositório**: ~~[Projeto Final Big Data Engineer Semantix Academic](https://github.com/rafaelladuarte/covid_big_data_enginner_semantix_final_project)~~
+   - **Descrição**:  Desenvolvimento de um pipeline distribuído para processamento e análise de dados de ~~COVID-19~~ Arbovirose (Dengue, Zika e Chikungunya) no Brasil. O sistema realiza o envio de dados para o HDFS, organiza-os em uma tabela Hive particionada por município e gera visualizações analíticas utilizando Apache Spark. As visualizações incluem casos recuperados, confirmados e óbitos, e são armazenadas em diferentes formatos e tecnologias para fins de monitoramento e análise em tempo real. Uma visualização de síntese por estado também será gerada e integrada a um dashboard no Elastic..
    - **Ferramentas**: HDFS, Apache Hive, Apache Spark, Apache Kafka, Elasticsearch, Kibana, Parquet com compressão Snappy.
    - **Objetivo**: Aplicar habilidades técnicas em big data, engenharia de dados e visualização distribuída com Spark, Hive, Kafka e Elastic.
-   - **Base de dados**: Base de dados: Dados públicos de COVID-19 com granularidade municipal (fontes como Ministério da Saúde, Secretarias Estaduais de Saúde ou bases similares com atualizações regulares)
+   - **Base de dados**: ~~Dados públicos de COVID-19 com granularidade municipal (fontes como Ministério da Saúde, Secretarias Estaduais de Saúde ou bases similares com atualizações regulares)~~ [API DEMAS - Ministério da Saúde](https://apidadosabertos.saude.gov.br/v1/#/); [Conjunto de Dados Arboviroses](https://opendatasus.saude.gov.br/group/arboviroses)
    - **Referências**: [Curso Semantix](https://github.com/rafaelladuarte/big_data_engineer_sematix), [Exemplo de Projeto Final](https://github.com/cicerooficial/projeto-final-big-data-enginner-sematix#enviar-os-dados-para-o-hdfs)
 
 ### 3.  **Construção de uma Arquitetura de Dados em Nuvem para Análise em Tempo Próximo ao Real**
